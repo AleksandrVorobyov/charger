@@ -1,0 +1,13 @@
+extends ../layouts/page-layout.pug
+include ./../mixins/*.pug
+
+block variables
+	- var title = 'Главная страница';
+	- var pageClass= "ui";
+	- var pageFileName= "index.html";
+
+
+block content
+	header
+		include ../sections/nav.pug
+		include ../sections/header.pug
