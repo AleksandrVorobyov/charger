@@ -1,0 +1,28 @@
+.projects {
+  position: relative;
+  z-index: 50;
+  padding: 120px 0 100px;
+}
+
+.projects__title {
+  position: relative;
+  margin-bottom: 90px;
+  font-size: 60px;
+  font-family: "PlayfairDisplay-Regular";
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.5px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(227, 160, 98);
+    width: 47px;
+    height: 2px;
+  }
+}

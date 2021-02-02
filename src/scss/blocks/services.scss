@@ -1,0 +1,307 @@
+.services {
+  position: relative;
+  height: 600px;
+  padding-bottom: 70px;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../img/services/bg.jpg") center left / cover no-repeat;
+  background-clip: content-box;
+  z-index: 60;
+}
+
+.services-wrap {
+  padding-top: 110px;
+}
+
+.services-row {
+}
+
+.services__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+.services__text-title {
+  position: relative;
+  font-size: 60px;
+  padding-bottom: 25px;
+  font-family: "PlayfairDisplay-Regular";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 4.5px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 0;
+    width: 47px;
+    height: 2px;
+    background-color: rgb(227, 160, 98);
+  }
+}
+
+.services__text-link {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "proxima-nova";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 14px;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(227, 160, 98);
+    transition: height 0.4s linear, left 0.2s linear 0.4s,
+      width 0.2s linear 0.4s;
+    z-index: -5;
+  }
+
+  &:hover {
+    color: #000;
+  }
+
+  &:hover::before {
+    height: 100%;
+    left: -7px;
+    width: calc(100% + 14px);
+  }
+}
+
+.services__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services__card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  padding: 20px;
+  overflow: hidden;
+
+  &:hover {
+    .services__card-after {
+      opacity: 1;
+    }
+
+    .services__card-before-title {
+      opacity: 0;
+    }
+
+    .services__card-img::after {
+      opacity: 1;
+    }
+  }
+}
+
+.services__card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7) 30%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 10;
+    opacity: 1;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7) 30%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.services__card-before-title {
+  display: inline-flex;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "proxima-nova";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  transition: opacity 0.4s ease-in;
+  letter-spacing: 1px;
+}
+
+.services__card-after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e3a062;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.services__card-title {
+  position: relative;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "proxima-nova";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 1px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 36px;
+    background-color: rgb(227, 160, 98);
+  }
+}
+
+.services__card-subtitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "proxima-nova";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.services__card-link {
+  position: relative;
+  display: inline;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "proxima-nova";
+  color: rgb(227, 160, 98);
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 1px;
+  z-index: 10;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgb(227, 160, 98);
+    transition: height 0.4s linear, left 0.2s linear 0.4s,
+      width 0.2s linear 0.4s;
+    z-index: -5;
+  }
+
+  &:hover {
+    color: #000;
+  }
+
+  &:hover::before {
+    height: 100%;
+    left: -7px;
+    width: calc(100% + 14px);
+  }
+}
+
+.services__tag {
+  position: absolute;
+  bottom: 225px;
+  left: 0;
+  padding: 0 15px;
+  margin: auto;
+  transform: rotate(-90deg) translateX(-50%);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "PlayfairDisplay-Regular";
+  color: rgb(227, 160, 98);
+  line-height: 1;
+
+  span {
+    position: relative;
+  }
+
+  span::before {
+    position: absolute;
+    top: -14px;
+    left: 130px;
+    transform: rotate(-90deg) translateX(-50%);
+    background-color: rgb(227, 160, 98);
+    width: 2px;
+    height: 50px;
+    content: "";
+    z-index: -1;
+  }
+}
+
+.services__bg {
+  position: absolute;
+  top: -160px;
+  left: 0;
+  font-size: 300px;
+  font-weight: 400;
+  font-family: "PlayfairDisplay-Regular";
+  color: rgba(227, 160, 98, 0.22);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
