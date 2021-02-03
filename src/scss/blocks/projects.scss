@@ -17,7 +17,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
@@ -25,4 +25,147 @@
     width: 47px;
     height: 2px;
   }
+}
+
+.projects__carousel-first {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 355px;
+  margin-bottom: 50px;
+  z-index: 50;
+}
+
+.projects__carousel-first-item {
+  position: relative;
+  width: 430px;
+  height: 355px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.projects__carousel-first-link {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  height: 275px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.projects__carousel-second {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 355px;
+  z-index: 50;
+}
+
+.projects__carousel-second-item {
+  position: relative;
+  width: 430px;
+  height: 355px;
+
+  overflow: hidden;
+}
+
+.projects__carousel-second-link {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  height: 275px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.projects__carousel-first .projects__carousel--big {
+  width: 550px;
+  height: 355px;
+
+  .projects__carousel-first-link {
+    height: 355px;
+  }
+}
+
+.projects__carousel-second .projects__carousel--big {
+  width: 550px;
+  height: 355px;
+
+  .projects__carousel-second-link {
+    height: 355px;
+  }
+}
+
+.projects__link {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+}
+
+.projects__tag {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  padding: 0 15px;
+  margin: auto;
+  transform: rotate(-90deg) translateX(-50%);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "PlayfairDisplay-Regular";
+  color: rgb(227, 160, 98);
+  line-height: 1;
+
+  span {
+    position: relative;
+  }
+
+  span::before {
+    position: absolute;
+    top: -14px;
+    left: 130px;
+    transform: rotate(-90deg) translateX(-50%);
+    background-color: rgb(227, 160, 98);
+    width: 2px;
+    height: 50px;
+    content: "";
+    z-index: -1;
+  }
+}
+
+.projects__bg {
+  position: absolute;
+  top: 115px;
+  right: 0;
+  font-size: 300px;
+  font-weight: 400;
+  font-family: "PlayfairDisplay-Regular";
+  color: rgba(227, 160, 98, 0.22);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.projects-wrap-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  max-width: 1870px;
+  padding: 0 15px;
+  margin: auto;
+  z-index: -40;
 }
