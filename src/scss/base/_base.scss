@@ -67,16 +67,6 @@ img {
   position: relative;
 }
 
-@media (max-width: 1170px) {
-  .animated {
-    animation: none;
-  }
-
-  .wow {
-    animation: none;
-  }
-}
-
-img {
-  pointer-events: none;
-}
+// img {
+//   pointer-events: none;
+// }
