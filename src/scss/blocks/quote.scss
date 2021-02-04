@@ -1,9 +1,13 @@
 .quote {
   position: relative;
-  padding: 330px 0 330px;
+  padding: 230px 0 230px;
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url("../img/quote/bg.jpg") center center / cover no-repeat;
   z-index: 60;
+
+  @media (min-width: 768px) {
+    padding: 330px 0 330px;
+  }
 }
 
 .quote-wrap {
@@ -19,11 +23,15 @@
     position: absolute;
     content: "";
     top: -100px;
-    left: 120px;
+    left: 0px;
     width: 150px;
     height: 190px;
     background: url("../img/quote/png/message.png") center center / contain
       no-repeat;
+
+    @media (min-width: 480px) {
+      left: 120px;
+    }
   }
 }
 
@@ -35,13 +43,21 @@
 .quote__carousel-quote {
   position: relative;
   margin-bottom: 60px;
-  font-size: 36px;
+  font-size: 20px;
   font-family: "PlayfairDisplay-Italic";
   color: rgb(255, 255, 255);
   font-style: italic;
   line-height: 1.333;
   letter-spacing: 0.9px;
   text-align: center;
+
+  @media (min-width: 480px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+  }
 
   &::before {
     position: absolute;
@@ -77,9 +93,10 @@
 }
 
 .quote__tag {
+  display: none;
   position: absolute;
   bottom: -130px;
-  left: 30px;
+  left: -45px;
   padding: 0 15px;
   margin: auto;
   transform: rotate(-90deg) translateX(-50%);
@@ -88,6 +105,14 @@
   font-family: "PlayfairDisplay-Regular";
   color: rgb(227, 160, 98);
   line-height: 1;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+
+  @media (min-width: 1280px) {
+    left: 30px;
+  }
 
   span {
     position: relative;
@@ -108,15 +133,19 @@
 
 .quote__bg {
   position: absolute;
-  top: -530px;
+  top: -400px;
   left: 0;
   font-size: 300px;
-  font-weight: 400;
-  font-family: "PlayfairDisplay-Regular";
+  font-weight: 700;
+  font-family: "PlayfairDisplay-Bold";
   color: rgba(227, 160, 98, 0.22);
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    top: -530px;
+  }
 }
 
 .quote__nav {
@@ -136,11 +165,27 @@
 .quote__nav-btn-left {
   position: absolute;
   left: 0;
-  top: -200px;
+  top: -110px;
+
+  @media (min-width: 480px) {
+    top: -150px;
+  }
+
+  @media (min-width: 980px) {
+    top: -200px;
+  }
 }
 
 .quote__nav-btn-right {
   position: absolute;
   right: 0;
-  top: -200px;
+  top: -110px;
+
+  @media (min-width: 480px) {
+    top: -150px;
+  }
+
+  @media (min-width: 980px) {
+    top: -200px;
+  }
 }

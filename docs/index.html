@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Главная страница</title>
 	<meta name="keywords" />
@@ -21,13 +22,15 @@
 		<header>
 			<section class="nav">
 				<div class="big-container">
-					<div class="nav-row"><a class="nav__logo" href="#"><img src="./img/logo/icon.png" alt="logo" />
-							<h1 class="nav__logo-title"><span class="nav__logo-title-main">Charger</span><span class="nav__logo-title-sub">CUSTOMS</span></h1>
-						</a>
+					<div class="nav-row">
+						<div class="nav__logo"><a class="logo" href="#"><img src="./img/logo/icon.png" alt="logo" />
+								<h1 class="logo__title"><span class="logo__title-main">Charger</span><span class="logo__title-sub">CUSTOMS</span></h1>
+							</a>
+						</div>
 						<ul class="nav__links">
-							<li class="nav__links-item"><a class="nav__links-item-link" href="#">projects</a></li>
-							<li class="nav__links-item"><a class="nav__links-item-link" href="#">Services</a></li>
-							<li class="nav__links-item"><a class="nav__links-item-link" href="#">about us</a></li>
+							<li class="link-head"><a class="link-head__item" href="#">projects</a></li>
+							<li class="link-head"><a class="link-head__item" href="#">Services</a></li>
+							<li class="link-head"><a class="link-head__item" href="#">about us</a></li>
 						</ul>
 						<div class="nav__burger">
 							<button class="nav__burger-btn" id="burger-btn" type="button"><span></span></button>
@@ -90,10 +93,10 @@
 						<li class="header__bottom-block-social-item">/</li>
 						<li class="header__bottom-block-social-item"><a class="header__bottom-block-social-link" href="#">Youtube</a></li>
 					</ul>
+					<div class="header__bottom-block-dots"><span id="header-dots-now">01</span><span id="header-dots-all">04</span></div>
 					<div class="header__bottom-block-text">
 						<p>Scroll down</p>
 					</div>
-					<div class="header__bottom-block-dots"><span id="header-dots-now">01</span><span id="header-dots-all">04</span></div>
 				</div>
 			</section>
 		</header>
@@ -102,14 +105,10 @@
 				<div class="big-container rel">
 					<div class="container">
 						<article class="about-us-wrap">
-							<div class="about-us-col">
-								<div class="about-us__img"><img src="./img/about-us/01.jpg" alt="" /></div>
-							</div>
-							<div class="about-us-col">
-								<div class="about-us__text">
-									<h3 class="about-us__title">About us</h3>
-									<p class="about-us__subtitle">Charger Customs - luxury automotive restyling center based in Corona, California. There is no limit to what we can do.</p><a class="btn-more" href="#"><span>More</span></a>
-								</div>
+							<div class="about-us__img"><img src="./img/about-us/01.jpg" alt="" /></div>
+							<div class="about-us__text">
+								<h3 class="about-us__title">About us</h3>
+								<p class="about-us__subtitle">Charger Customs - luxury automotive restyling center based in Corona, California. There is no limit to what we can do.</p><a class="btn-more" href="#"><span>More</span></a>
 							</div>
 						</article>
 					</div>
@@ -233,6 +232,26 @@
 				</div>
 			</section>
 		</main>
+		<footer>
+			<section class="footer">
+				<div class="container">
+					<div class="footer-row"><a class="logo" href="#"><img src="./img/logo/icon.png" alt="logo" />
+							<h1 class="logo__title"><span class="logo__title-main">Charger</span><span class="logo__title-sub">CUSTOMS</span></h1>
+						</a>
+						<ul class="footer__links">
+							<li class="link-head"><a class="link-head__item" href="#">about us</a></li>
+							<li class="link-head"><a class="link-head__item" href="#">Services</a></li>
+							<li class="link-head"><a class="link-head__item" href="#">projects</a></li>
+						</ul>
+					</div>
+					<div class="footer-row">
+						<div class="footer__copy">
+							<p>© Copyright 2017. All Rights Reserved </p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
 	</div><!-- build:js1 js/jquery.js -->
 	<script src="./libs/jquery/jquery-3.3.1.min.js"></script>
 	<!-- endbuild -->

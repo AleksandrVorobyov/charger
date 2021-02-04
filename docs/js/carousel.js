@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $(".header__carousel").owlCarousel({
+        margin: 10,
         items: 1,
         nav: true,
         navText : ["prev","next"],

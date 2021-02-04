@@ -8,37 +8,68 @@
 .about-us-wrap {
   position: relative;
   display: flex;
-  justify-content: space-between;
-}
-
-.about-us-col {
-  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 980px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1366px) {
+    justify-content: space-between;
+  }
 }
 
 .about-us__img {
-  width: 650px;
-  height: 550px;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 300px;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+  @media (min-width: 480px) {
+    width: 450px;
+    height: 350px;
+  }
+
+  @media (min-width: 980px) {
+    margin-bottom: 0;
+    margin-right: 90px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 550px;
+    height: 450px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 650px;
+    height: 550px;
+    margin-right: 0;
+  }
 }
 
 .about-us__text {
-  max-width: 400px;
+  max-width: 375px;
 }
 
 .about-us__title {
   position: relative;
   margin-bottom: 60px;
-  font-size: 65px;
-  font-family: "PlayfairDisplay-Regular";
+  font-size: 55px;
+  font-family: "PlayfairDisplay-Bold";
   color: rgb(0, 0, 0);
   font-weight: 700;
   line-height: 1;
+
+  @media (min-width: 480px) {
+    font-size: 65px;
+  }
 
   &::before {
     position: absolute;
@@ -62,9 +93,10 @@
 }
 
 .about-us__tag {
+  display: none;
   position: absolute;
   bottom: 85px;
-  right: 0;
+  right: -35px;
   padding: 0 15px;
   margin: auto;
   transform: rotate(-90deg) translateX(-50%);
@@ -74,15 +106,23 @@
   color: rgb(227, 160, 98);
   line-height: 1;
 
+  @media (min-width: 1024px) {
+    display: block;
+  }
+
+  @media (min-width: 1280px) {
+    right: 0px;
+  }
+
   span {
     position: relative;
   }
 
   span::before {
     position: absolute;
-    top: -14px;
-    left: 110px;
-    transform: rotate(-90deg) translateX(-50%);
+    top: -13px;
+    left: 120px;
+    transform: translateX(-50%) rotate(-90deg);
     background-color: rgb(227, 160, 98);
     width: 2px;
     height: 50px;
@@ -93,13 +133,17 @@
 
 .about-us__bg {
   position: absolute;
-  top: -40px;
+  top: -175px;
   right: 0;
   font-size: 300px;
-  font-weight: 400;
-  font-family: "PlayfairDisplay-Regular";
+  font-weight: 700;
+  font-family: "PlayfairDisplay-Bold";
   color: rgba(227, 160, 98, 0.22);
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
+
+  @media (min-width: 1366px) {
+    top: -40px;
+  }
 }

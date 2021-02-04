@@ -1,19 +1,27 @@
 .projects {
   position: relative;
   z-index: 50;
-  padding: 120px 0 100px;
+  padding: 30px 0 100px;
+
+  @media (min-width: 768px) {
+    padding: 120px 0 100px;
+  }
 }
 
 .projects__title {
   position: relative;
   margin-bottom: 90px;
-  font-size: 60px;
-  font-family: "PlayfairDisplay-Regular";
+  font-size: 55px;
+  font-family: "PlayfairDisplay-Bold";
   color: rgb(0, 0, 0);
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 1.5px;
   text-align: center;
+
+  @media (min-width: 480px) {
+    font-size: 60px;
+  }
 
   &::before {
     position: absolute;
@@ -31,25 +39,38 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  height: 355px;
+  height: 305px;
   margin-bottom: 50px;
   z-index: 50;
+
+  @media (min-width: 480px) {
+    height: 355px;
+  }
 }
 
 .projects__carousel-first-item {
   position: relative;
-  width: 430px;
-  height: 355px;
+  width: 380px;
+  height: 305px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+
+  @media (min-width: 980px) {
+    width: 430px;
+    height: 355px;
+  }
 }
 
 .projects__carousel-first-link {
   width: 100%;
   display: flex;
   align-items: flex-end;
-  height: 275px;
+  height: 225px;
+
+  @media (min-width: 980px) {
+    height: 275px;
+  }
 
   img {
     width: 100%;
@@ -69,17 +90,25 @@
 
 .projects__carousel-second-item {
   position: relative;
-  width: 430px;
-  height: 355px;
-
+  width: 380px;
+  height: 305px;
   overflow: hidden;
+
+  @media (min-width: 980px) {
+    width: 430px;
+    height: 355px;
+  }
 }
 
 .projects__carousel-second-link {
   width: 100%;
   display: flex;
   align-items: flex-end;
-  height: 275px;
+  height: 225px;
+
+  @media (min-width: 980px) {
+    height: 275px;
+  }
 
   img {
     width: 100%;
@@ -90,34 +119,54 @@
 }
 
 .projects__carousel-first .projects__carousel--big {
-  width: 550px;
-  height: 355px;
+  width: 500px;
+  height: 305px;
+
+  @media (min-width: 980px) {
+    width: 550px;
+    height: 355px;
+  }
 
   .projects__carousel-first-link {
-    height: 355px;
+    height: 305px;
+    @media (min-width: 980px) {
+      height: 355px;
+    }
   }
 }
 
 .projects__carousel-second .projects__carousel--big {
-  width: 550px;
-  height: 355px;
+  width: 500px;
+  height: 305px;
+
+  @media (min-width: 980px) {
+    width: 550px;
+    height: 355px;
+  }
 
   .projects__carousel-second-link {
-    height: 355px;
+    height: 305px;
+    @media (min-width: 980px) {
+      height: 355px;
+    }
   }
 }
 
 .projects__link {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   z-index: 50;
+
+  @media (min-width: 980px) {
+    margin-top: 50px;
+  }
 }
 
 .projects__tag {
+  display: none;
   position: absolute;
   bottom: 200px;
-  right: 0;
+  right: -40px;
   padding: 0 15px;
   margin: auto;
   transform: rotate(-90deg) translateX(-50%);
@@ -126,6 +175,14 @@
   font-family: "PlayfairDisplay-Regular";
   color: rgb(227, 160, 98);
   line-height: 1;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+
+  @media (min-width: 1280px) {
+    right: 0px;
+  }
 
   span {
     position: relative;
@@ -150,9 +207,9 @@
   right: 0;
   font-size: 300px;
   font-weight: 400;
-  font-family: "PlayfairDisplay-Regular";
+  font-family: "PlayfairDisplay-Bold";
   color: rgba(227, 160, 98, 0.22);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
 }
