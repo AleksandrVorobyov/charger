@@ -178,14 +178,17 @@
 .services__card:focus {
   .services__card-after {
     opacity: 1;
+    visibility: visible;
   }
 
   .services__card-before-title {
     opacity: 0;
+    visibility: hidden;
   }
 
   .services__card-img::after {
     opacity: 1;
+    visibility: visible;
   }
 }
 
