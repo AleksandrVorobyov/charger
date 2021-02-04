@@ -163,7 +163,6 @@
   width: 100%;
   height: 300px;
   padding: 20px;
-  overflow: hidden;
 
   @media (min-width: 480px) {
     width: 300px;
@@ -173,19 +172,20 @@
     width: 350px;
     height: 350px;
   }
+}
 
-  &:hover {
-    .services__card-after {
-      opacity: 1;
-    }
+.services__card:hover,
+.services__card:focus {
+  .services__card-after {
+    opacity: 1;
+  }
 
-    .services__card-before-title {
-      opacity: 0;
-    }
+  .services__card-before-title {
+    opacity: 0;
+  }
 
-    .services__card-img::after {
-      opacity: 1;
-    }
+  .services__card-img::after {
+    opacity: 1;
   }
 }
 
