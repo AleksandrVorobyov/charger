@@ -6,7 +6,7 @@ $(document).ready(function(){
         navText : ["prev","next"],
         dots: false,
         mouseDrag: false,
-        touchDrag: true,
+        touchDrag: false,
         smartSpeed: 3000
     });
 });
@@ -39,7 +39,7 @@ $(document).ready(function(){
         autoPlayTimeout: 60000,
         autoplayHoverPause: true,
         lazyLoad:true,
-        touchDrag: true,
+        touchDrag: false,
         mouseDrag: false,
         autoWidth: true,
     });
@@ -57,7 +57,7 @@ $(document).ready(function(){
         autoPlayTimeout: 60000,
         autoplayHoverPause: true,
         lazyLoad:true,
-        touchDrag: true,
+        touchDrag: false,
         mouseDrag: false,
         autoWidth: true,
         rtl:true,
@@ -71,7 +71,7 @@ $(document).ready(function(){
         dots: false,
         mouseDrag: false,
         smartSpeed: 3000,
-        touchDrag: true,
+        touchDrag: false,
         loop: true
     });
 });

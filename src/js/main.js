@@ -12,3 +12,16 @@ if (window.screen.width < 720) {
         })
     })
 }
+
+const burgerbtn = document.getElementById('burger-btn');
+const sidebar = document.getElementById('sidebar');
+
+burgerbtn.addEventListener('click', function () {
+    sidebar.classList.toggle('sidebar--active');
+})
+
+const sidebarExit = document.getElementById('sidebar-exit');
+
+sidebarExit.addEventListener('click', function() {
+    sidebar.classList.remove('sidebar--active');
+})
